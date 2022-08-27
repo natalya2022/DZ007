@@ -24,7 +24,7 @@ int[,] FillArray(int numLine, int numColumns, int minRand, int maxRand)         
 
 void FindElem(int[,] matrix, int row, int col)          // Функция выводит элемент по индексам
 {
-    if (row < matrix.GetLength(0) && col < matrix.GetLength(1))
+    if (row < matrix.GetLength(0)&& row >= 0 && col < matrix.GetLength(1) && col >= 0)
     {
         System.Console.WriteLine($"Искомый элемент массива равен {matrix[row, col]}");
     }
